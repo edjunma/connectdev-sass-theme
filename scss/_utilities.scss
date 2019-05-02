@@ -1,4 +1,4 @@
-// Containers
+// Container
 .container {
 	max-width: $max-width;
 	margin: auto;
@@ -47,7 +47,7 @@
 	}
 	&-light {
 		@include set-background($light-color);
-		border: 1px solid #ccc;
+		border: #ccc 1px solid;
 	}
 	&-dark {
 		@include set-background($dark-color);
@@ -60,7 +60,7 @@
 	}
 	&-white {
 		@include set-background(#fff);
-		border: 1px solid #ccc;
+		border: #ccc 1px solid;
 	}
 }
 
@@ -72,6 +72,7 @@
 	padding: 0.4rem 1.3rem;
 	border: none;
 	cursor: pointer;
+	font-size: 1rem;
 	margin-right: 0.5rem;
 	outline: none;
 	transition: all 0.2s ease-in;
@@ -114,16 +115,16 @@
 	background: $light-color;
 	color: #333;
 
-	&-alert-primary {
+	&.alert-primary {
 		@include set-background($primary-color);
 	}
-	&-alert-dark {
+	&.alert-dark {
 		@include set-background($dark-color);
 	}
-	&-alert-success {
+	&.alert-success {
 		@include set-background($success-color);
 	}
-	&-alert-danger {
+	&.alert-danger {
 		@include set-background($danger-color);
 	}
 }
@@ -140,15 +141,12 @@
 	&.badge-primary {
 		@include set-background($primary-color);
 	}
-
 	&.badge-dark {
 		@include set-background($dark-color);
 	}
-
 	&.badge-success {
 		@include set-background($success-color);
 	}
-
 	&.badge-danger {
 		@include set-background($danger-color);
 	}
